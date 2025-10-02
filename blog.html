@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Luxurious Bridal Haven</title>
+</head>
+
+<body>
+
+   <div class="wrapper">
+<div class="promo">
+   <div class="container">
+      <p class="promo__text">save 10% off when you
+         <a class="promo__link" href="#">sing up</a>
+      </p>
+   </div>
+</div>
+<header class="header">
+  <div class="container">
+
+    <div class="header__inner">
+
+      <button class="menu__btn">
+        <svg width="30" height="19">
+          <use xlink:href="images/sprite.svg#mobile-btn"></use>
+        </svg>
+      </button>
+      
+      <div class="header__logo">
+        <a class="logo" href="http://localhost:3000/"> <img src="images/src/logo.svg" alt="logo"> </a>
+      </div>
+
+      <ul class="header__lang header__lang--none">
+        <li class="header__lang-item"> <a href="#" class="header__lang-link header__lang--active">EN</a>/ </li>
+        <li class="header__lang-item"> <a href="#" class="header__lang-link ">UA</a> </li>
+      </ul>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"> <a href="http://localhost:3000/catalog.html" class="menu__link">catalog</a> </li>
+          <li class="menu__item"> <a href="http://localhost:3000/collection.html" class="menu__link">collections</a>
+          </li>
+          <li class="menu__item"> <a href="http://localhost:3000/blog.html" class="menu__link">about</a> </li>
+          <li class="menu__item"> <a href="http://localhost:3000/appointment.html" class="menu__link">book an
+              appointment</a> </li>
+          <li class="menu__item"> <a href="#" class="menu__link">contact</a> </li>
+        </ul>
+      </nav>
+
+      <ul class="header__actions">
+        <li class="header__actions-item"> <a href="#" class="header__actions-link"> <svg width="24" height="24">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg> </a> </li>
+        <li class="header__actions-item"> <a href="#" class="header__actions-link"> <svg width="24" height="22">
+              <use xlink:href="images/sprite.svg#wishlist"></use>
+            </svg> </a> </li>
+        <li class="header__actions-item"> <a href="#" class="header__actions-link open-modal"> <svg svg width="24"
+              height="24">
+              <use xlink:href="images/sprite.svg#shopping-bag"></use>
+            </svg> </a> </li>
+      </ul>
+
+    </div>
+
+
+    <div class="modal" aria-hidden="true">
+      <div class="modal__overlay"> </div>
+      <div class="modal__content" role="dialog" aria-modal="true">
+        <div class="checkout__details-items">
+          <div class="checkout__details-itemsline">
+            <p class="checkout__details-quantity">2 items in bag</p> <button class="checkout__details-del close-modal"
+              aria-label="close modal window"> <svg width="18" height="18">
+                <use xlink:href="images/sprite.svg#order-del"></use>
+              </svg> </button>
+          </div>
+          <div class="checkout__item">
+            <picture>
+              <source srcset='images/order-1.avif' type='image/avif'>
+              <source srcset='images/order-1.webp' type='image/webp'> <img class="checkout__item-img"
+                src='images/order-1.png' alt='Alt text'>
+            </picture>
+            <div class="checkout__item-box">
+              <p class="checkout__item-title">naomi</p>
+              <dl class="checkout__item-list">
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term">size:</dt>
+                  <dd class="checkout__item-definition">s</dd>
+                </div>
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term">color:</dt>
+                  <dd class="checkout__item-definition">ivory</dd>
+                </div>
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term checkout__item-termnone">Item subtotal:</dt>
+                  <dd class="checkout__item-definition">€ 2,600</dd>
+                </div>
+              </dl> <button class="checkout__item-del"> <svg width="16" height="20">
+                  <use xlink:href="images/sprite.svg#item-del"></use>
+                </svg> </button>
+            </div>
+          </div>
+          <div class="checkout__item">
+            <picture>
+              <source srcset='images/order-2.avif' type='image/avif'>
+              <source srcset='images/order-2.webp' type='image/webp'> <img class="checkout__item-img"
+                src='images/order-2.png' alt='Alt text'>
+            </picture>
+            <div class="checkout__item-box">
+              <p class="checkout__item-title">sabine</p>
+              <dl class="checkout__item-list">
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term">size:</dt>
+                  <dd class="checkout__item-definition">38</dd>
+                </div>
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term">color:</dt>
+                  <dd class="checkout__item-definition">ivory</dd>
+                </div>
+                <div class="checkout__item-listbox">
+                  <dt class="checkout__item-term checkout__item-termnone">Item subtotal:</dt>
+                  <dd class="checkout__item-definition">€ 200</dd>
+                </div>
+              </dl> <button class="checkout__item-del"> <svg width="16" height="20">
+                  <use xlink:href="images/sprite.svg#item-del"></use>
+                </svg> </button>
+            </div>
+          </div>
+        </div>
+        <div class="order">
+          <dl class="order__list">
+            <div class="order__list-box">
+              <dt class="order__list-term">Subtotal:</dt>
+              <dd class="order__list-definition">€2, 800</dd>
+            </div>
+            <div class="order__list-box">
+              <dt class="order__list-term">Shipping:</dt>
+              <dd class="order__list-definition">free</dd>
+            </div>
+            <div class="order__list-box">
+              <dt class="order__list-term">Total:</dt>
+              <dd class="order__list-definition">€ 2,800</dd>
+            </div>
+          </dl>
+          <div class="order__change-buttons"> <a class="order__change" href="#">keep shopping</a> <a
+              class="order__change-now" href="#">buy it now</a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+   <div class="blog-main">
+      <div class="container-big">
+         <div class="blog-main__inner">
+            <picture>
+               <source srcset='images/blog-main.avif' type='image/avif'>
+               <source srcset='images/blog-main.webp' type='image/webp'>
+               <img class="blog-main__img" src='images/blog-main.jpg' alt='Alt text'>
+            </picture>
+            <div class="blog-main__content">
+               <a class="blog-main__category" href="#">
+                  Wedding
+               </a>
+               <h2 class="blog-main__title">
+                  <a href="#">
+                     the perfect wedding: how to create magic without losing your mind
+                  </a>
+               </h2>
+               <p class="blog-main__text">A wedding is more than just a day — it’s a love story told through every
+                  detail, from the dress and décor to the music and emotions. This article shares inspiration, practical
+                  tips, and stress-free strategies to help you plan a truly unforgettable celebration while staying calm
+                  and joyful every step of the way.</p>
+               <a class="blog-main__link" href="#">read the article</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="blog">
+      <div class="container-big">
+         <div class="blog__nav">
+            <p class="blog__nav-title">Latest news</p>
+            <form class="blog__nav-category">
+               <div class="select__wrapper">
+                  <select class="select">
+                     <option selected>Categories</option>
+                     <option value="Wedding">Wedding</option>
+                     <option value="Wedding Dress">Wedding Dress</option>
+                     <option value="Rings">Rings</option>
+                     <option value="Bouquets">Bouquets</option>
+                  </select>
+               </div>
+            </form>
+            <search class="search">
+               <form class="search__form">
+                  <input class="search__input" type="search" placeholder="search">
+                  <button class="search__btn">
+                     <svg width="18" height="18">
+                        <use xlink:href="images/sprite.svg#blog-search"></use>
+                     </svg>
+                  </button>
+               </form>
+            </search>
+
+            <ul class="blog__nav-btns">
+               <li class="blog__nav-item">
+                  <button class="blog__nav-btn view-mode__btn--grid view-mode__btn--active">
+                     <svg width="40" height="40">
+                        <use xlink:href="images/sprite.svg#grid"></use>
+                     </svg>
+                  </button>
+               </li>
+               <li class="blog__nav-item">
+                  <button class="blog__nav-btn view-mode__btn--line">
+                     <svg width="40" height="40">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                     </svg>
+                  </button>
+               </li>
+            </ul>
+
+         </div>
+         <div class="blog__list view-mode__container view-mode__container--grid">
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-1.avif' type='image/avif'>
+                     <source srcset='images/blog-1.webp' type='image/webp'>
+                     <img src='images/blog-1.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        The Ultimate Wedding Checklist: From 'Yes!' to 'I Do
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">1 day ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-2.avif' type='image/avif'>
+                     <source srcset='images/blog-2.webp' type='image/webp'>
+                     <img src='images/blog-2.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding Dress</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        How to Choose the Perfect Wedding Dress for Your Style
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">2 days ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-3.avif' type='image/avif'>
+                     <source srcset='images/blog-3.webp' type='image/webp'>
+                     <img src='images/blog-3.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Rings</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        Wedding Rings 101: A Modern Guide to Styles
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">1 week ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-4.avif' type='image/avif'>
+                     <source srcset='images/blog-4.webp' type='image/webp'>
+                     <img src='images/blog-4.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        Picture-Perfect Moments: Wedding Photo Ideas
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">1 week ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-5.avif' type='image/avif'>
+                     <source srcset='images/blog-5.webp' type='image/webp'>
+                     <img src='images/blog-5.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Bouquets</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        Bridal Bouquets That Wow: 20 Stunning Ideas
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">9 days ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-6.avif' type='image/avif'>
+                     <source srcset='images/blog-6.webp' type='image/webp'>
+                     <img src='images/blog-6.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        Top Wedding Trends of the Year: What’s In & What’s Out </a>
+                  </h3>
+                  <p class="blog__list-date">11 days ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-7.avif' type='image/avif'>
+                     <source srcset='images/blog-7.webp' type='image/webp'>
+                     <img src='images/blog-7.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding Dress</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        5 Dress Changes for the Bride Who Wants It All
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">2 weeks ago</p>
+               </div>
+            </article>
+            <article class="blog__list-item">
+               <a class="blog__list-imglink" href="#">
+                  <picture>
+                     <source srcset='images/blog-8.avif' type='image/avif'>
+                     <source srcset='images/blog-8.webp' type='image/webp'>
+                     <img src='images/blog-8.jpg' alt='Alt text'>
+                  </picture>
+               </a>
+               <div class="blog__list-content">
+                  <p class="blog__list-category">Wedding</p>
+                  <h3 class="blog__list-title">
+                     <a href="#">
+                        Minimalist Weddings: Simple, Elegant, Unforgettable
+                     </a>
+                  </h3>
+                  <p class="blog__list-date">2 weeks ago</p>
+               </div>
+            </article>
+         </div>
+         <div class="pagination">
+         
+            <a class="pagination__prev pagination__arrow--disabled pagination__arrow" href="#">
+               <svg width="12" height="5">
+                  <use xlink:href="images/sprite.svg#arrow-prev"></use>
+               </svg>
+            </a>
+         
+            <ul class="pagination__list">
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link pagination__link--active">1</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">3</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">...</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">19</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">20</a>
+               </li>
+               <li class="pagination__item">
+                  <a href="#" class="pagination__link">21</a>
+               </li>
+            </ul>
+         
+            <a class="pagination__next pagination__arrow" href="#">
+               <svg width="12" height="5">
+                  <use xlink:href="images/sprite.svg#arrow-next"></use>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </div>
+</main>
+<footer class="footer">
+   <div class="container">
+      <nav class="footer__menu">
+         <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+               <a href="http://localhost:3000/catalog.html" class="footer__menu-link">Catalog</a>
+            </li>
+            <li class="footer__menu-item">
+               <a href="http://localhost:3000/collection.html" class="footer__menu-link">Collections</a>
+            </li>
+            <li class="footer__menu-item">
+               <a href="http://localhost:3000/blog.html" class="footer__menu-link">About</a>
+            </li>
+            <li class="footer__menu-item footer__logo">
+               <a class="logo" href="http://localhost:3000/">
+                  <img src="images/logo.svg" alt="logo">
+               </a>
+            </li>
+            <li class="footer__menu-item">
+               <a href="http://localhost:3000/appointment.html" class="footer__menu-link">Book your appointment</a>
+            </li>
+            <li class="footer__menu-item">
+               <a href="#" class="footer__menu-link">Contact</a>
+            </li>
+         </ul>
+      </nav>
+
+      <div class="footer__elements">
+         <div class="footer__element">
+            <p class="footer__element-title">Phones</p>
+            <ul class="footer__element-list">
+               <li class="footer__element-item">
+                  <a href="tel:+380978367320" class="footer__element-link">+380 (97) 836 73 20</a>
+               </li>
+               <li class="footer__element-item">
+                  <a href="tel:+380999846862" class="footer__element-link">+380 (99) 984 68 62</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__element">
+            <p class="footer__element-title">Emails</p>
+            <ul class="footer__element-list">
+               <li class="footer__element-item">
+                  <a href="mailto:office@luxuriousbridalhaven.com"
+                     class="footer__element-link">office@luxuriousbridalhaven.com</a>
+               </li>
+               <li class="footer__element-item">
+                  <a href="mailto:sales@luxuriousbridalhaven.com"
+                     class="footer__element-link">sales@luxuriousbridalhaven.com</a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__element">
+            <p class="footer__element-title">Location</p>
+            <address class="footer__address">Ukraine, Kyiv, <br>
+               st. Arsenalna, 5</address>
+         </div>
+         <div class="footer__element">
+            <p class="footer__element-title">Social</p>
+            <ul class="footer__social-list">
+               <li class="footer__social-item">
+                  <a href="https://www.facebook.com/?locale=uk_UA" class="footer__social-link">
+                     <svg width="26" height="26">
+                        <use xlink:href="images/sprite.svg#facebook"></use>
+                     </svg>
+                  </a>
+               </li>
+               <li class="footer__social-item">
+                  <a href="https://www.instagram.com/" class="footer__social-link">
+                     <svg width="26" height="26">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                     </svg>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer__element">
+            <p class="footer__element-title">Sign-up for our newsletter</p>
+            <form class="footer__form" action="">
+               <input class="footer__form-input" type="text" placeholder="Enter your email">
+               <button class="footer__form-btn" type="submit">
+                  <svg width="15" height="11">
+                     <use xlink:href="images/sprite.svg#env"></use>
+                  </svg>
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <div class="footer__bottom">
+      <div class="container">
+         <div class="footer__bottom-inner">
+            <p class="footer__copy">© Luxurious Bridal Haven. All rights reserved.</p>
+            <ul class="footer__bottom-list">
+               <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link">Privacy Policy</a>
+               </li>
+               <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link">Refund policy</a>
+               </li>
+               <li class="footer__bottom-item">
+                  <a href="#" class="footer__bottom-link">Terms of Service</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+</footer>
+
+</div>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
